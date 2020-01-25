@@ -102,6 +102,7 @@ class TestSurfaceView extends SurfaceView implements SurfaceHolder.Callback{
         drawThread.setTowardPoint((int)event.getX(),
                 (int)event.getY());
         drawThread.touch = true;
+        drawThread.radius = 0;
         return super.onTouchEvent(event);
     }
 }
